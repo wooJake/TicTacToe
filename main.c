@@ -45,16 +45,16 @@ int main(){
         ++turn;
         turn %= 8;
         
-        if ((board[2] == board[1] && board[2] == board[3] && board[2] != ' ') || 
+        if ((board[1] == board[0] && board[0] == board[2] && board[1] != ' ') || 
+            (board[3] == board[0] && board[3] == board[6] && board[3] != ' ') ||
+            (board[4] == board[0] && board[4] == board[8] && board[4] != ' ') ||
+            (board[4] == board[2] && board[4] == board[6] && board[4] != ' ') ||
+            (board[4] == board[5] && board[4] == board[3] && board[4] != ' ') ||
             (board[4] == board[1] && board[4] == board[7] && board[4] != ' ') ||
-            (board[5] == board[1] && board[5] == board[9] && board[5] != ' ') ||
-            (board[5] == board[3] && board[5] == board[7] && board[5] != ' ') ||
-            (board[5] == board[4] && board[5] == board[6] && board[5] != ' ') ||
             (board[5] == board[2] && board[5] == board[8] && board[5] != ' ') ||
-            (board[6] == board[3] && board[6] == board[9] && board[6] != ' ') ||
-            (board[8] == board[7] && board[8] == board[9] && board[8] != ' ')){
+            (board[7] == board[6] && board[7] == board[8] && board[7] != ' ')){
                 
-            if(board[boardIn - 1] == 'x'){
+            if(board[boardIn - 1] == 'X'){
                 
                 winState = 1;
             }   
