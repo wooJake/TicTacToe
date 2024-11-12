@@ -45,7 +45,7 @@ int main(){
         ++turn;
         turn %= 8;
         
-        if ((board[1] == board[0] && board[0] == board[2] && board[1] != ' ') || 
+        if ((board[1] == board[0] && board[1] == board[2] && board[1] != ' ') || 
             (board[3] == board[0] && board[3] == board[6] && board[3] != ' ') ||
             (board[4] == board[0] && board[4] == board[8] && board[4] != ' ') ||
             (board[4] == board[2] && board[4] == board[6] && board[4] != ' ') ||
